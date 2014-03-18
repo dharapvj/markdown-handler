@@ -1,18 +1,69 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
+@font-face {
+	font-family: 'Amaranath';
+	src: url('fonts/Amaranth-Regular.eot?') format('eot');
+	src: local('Amaranath Regular'), url('fonts/Amaranth-Regular.woff') format('woff'), url('fonts/Amaranth-Regular.ttf') format('truetype');
+}
 
-html, body {
-        padding:1em;
-        margin:auto;
-        max-width:50em;
-        background: snow;
-	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/Ubuntu-R.eot?') format('eot');
+	src: local('Ubuntu'), url('fonts/Ubuntu-R.woff') format('woff'), url('fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/OpenSans-Regular.eot?') format('eot');
+	src: local('OpenSans'), local('OpenSans Regular'), url('fonts/OpenSans-Regular.woff') format('woff'), url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+
+* {
+    font-family: OpenSans, Arial, sans-serif;
+}
+
+h1{
+	font-family: Ubuntu, Candara, Times New Roman, serif;
+}
+
+h2, h3, h4, h5, h6{
+	font-family: 'Amaranath', Ubuntu, Candara, Times New Roman, serif;
+}
+/*Cambria, Candara, Berlin Sans FB*/
+
 body {
-	font-size: 1.3em;
-	font-family: "Vollkorn", Palatino, Times, serif;
-	color: #333;
-	line-height: 1.4;
-	text-align: justify;
-	}
+    max-width: 50em;
+    margin: 0 auto;
+	background-image: url('img/500px/seamlesstexture15_500.jpg');
+    color: #111;
+}
+
+.content{
+	padding : 12px;
+	margin-top :30px;
+	margin-bottom:30px;
+
+	-webkit-box-shadow: 0 0 25px 1px #51744C;
+	box-shadow: 0 0 25px 1px #51744C; /*#4B56E8;*/
+
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	background: rgb(255,253,250); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZGZhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTklIiBzdG9wLWNvbG9yPSIjZmZmYWY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODklIiBzdG9wLWNvbG9yPSIjYzljNGFiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M2YmRiMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(255,253,250,1) 0%, rgba(255,250,244,1) 59%, rgba(201,196,171,1) 89%, rgba(198,189,176,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,253,250,1)), color-stop(59%,rgba(255,250,244,1)), color-stop(89%,rgba(201,196,171,1)), color-stop(100%,rgba(198,189,176,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,253,250,1) 0%,rgba(255,250,244,1) 59%,rgba(201,196,171,1) 89%,rgba(198,189,176,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,253,250,1) 0%,rgba(255,250,244,1) 59%,rgba(201,196,171,1) 89%,rgba(198,189,176,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,253,250,1) 0%,rgba(255,250,244,1) 59%,rgba(201,196,171,1) 89%,rgba(198,189,176,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(255,253,250,1) 0%,rgba(255,250,244,1) 59%,rgba(201,196,171,1) 89%,rgba(198,189,176,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffdfa', endColorstr='#c6bdb0',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
 header, nav, article, footer {
 	width: 700px;
 	margin:0 auto;
@@ -56,7 +107,7 @@ nav p {
 {
     position: relative;
     top: 2.25em;
-    left: -1.45em;
+    /*left: -1.45em;*/
     border-bottom: none;
     background-color: blanchedAlmond;
     color: black;
@@ -95,30 +146,57 @@ nav p {
 -------------------------------------------------------- */
 
 pre, code {
-	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-family: Monaco, "Consolas", "Menlo", monospace, serif;
 	font-size: .9em;
+    background-color: #F8F8F8;
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+	padding : 0 5px;
 }
 
 h1 {
-	margin-top: 0;
-	font-weight: normal;
-	}
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    margin-bottom: -5px;
+	margin-top: 10px;
+}
+h1 code {
+    font-size: 40px;
+}
+
 h2 {
-	font-weight: normal;
-	}
-	
+    font-size: 32px;
+    color: rgb(43,105,145);
+    font-weight: normal;
+    margin-bottom: -5px;
+}
+h2 code {
+    font-size: 22px;
+}
+
 h3 {
-	font-weight: normal;
-	font-style: italic;
-/*	margin-top:3em; */
-	}
+    font-size: 26px;
+    margin-bottom: -5px;
+}
+h3 code {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+h4 code {
+    font-size: 16px;
+}
 
 a {
-    color: #2484c1;
+    color: SlateBlue;
     text-decoration: none;
 }
 a:visited {
-    color: navy;
+    color: MediumSeaGreen;
 }
 a:hover {
     text-decoration: underline;
@@ -139,25 +217,22 @@ pre {
     border-radius: 10px;
     -moz-border-radius: 10px;	
     padding: 0.5em;
-    background-color: #111;
+    /*background-color: #111;*/
     overflow: auto;
     color: #CCC;
 }
 
 pre code {
-    background-color: #111;
+    border: none;
 }
 
 code {
-    background-color: #F0E8E8;
-    padding: 3px;
-    border-radius: 6px;
-    -moz-border-radius: 6px;	
+	border: 1px solid #CCCCCC;
 }
 
 p, li {
-    font-size: 1em;
-    line-height: 1.1em;
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
 
 table {
@@ -240,7 +315,9 @@ h1, h2, hr {
 q				{font-style: italic;}
 
 blockquote			{position: relative; margin: 24px 40px 0px;
-				 font: 90% Baskerville, Georgia, serif; color: #666;}
+				 font: 90% Baskerville, Georgia, serif; color: #666;   background: #f9f9f9;
+  padding: 0.5em 10px;
+}
 blockquote:before,		/* large quotes, top and bottom */
  blockquote:after		{display: block; height: 38px; overflow: hidden;
 				 font: 400% "Baskerville Old Face", Georgia, serif;}
@@ -259,14 +336,6 @@ article>section:first-of-type
  >p:first-of-type:first-letter,
  hr+p:first-letter		{display: block; float: left; padding: 8px 2px 0 0;
 				 font: 3em/1.846em Baskerville, "Times New Roman", serif;}
-
-/* book like `<hr />` “thematic break”, i.e. “---------- ♦ ----------” */
-hr				{margin: 0 20% 55px; padding: 24px 0; line-height: 2.923em;
-				 border: none; border-bottom: 1px solid black; text-align: center;
-				 color: inherit; background-color: inherit;}
-hr:before			{content: "\25C6"; display: inline-block; float: left; position: relative; left: -8px;
-				 margin: 0 50%; padding: 0 4px; background-color: #fffafa; cursor: default; }
-				 
 
 /* === white space ====================================================================================================== */
 /* some typographical / vertical space adjustments for prettiness */

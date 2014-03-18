@@ -2,15 +2,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+		.gradient {
+		   filter: none;
+		}
+	  </style>
+<![endif]-->
 	<meta name="content-type" http-equiv="content-type" value="text/html; utf-8"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo str_replace(basename(__FILE__), 'md-styles.css', $_SERVER['SCRIPT_NAME']); ?>">
 	<?php echo "<title>", basename(realpath($_SERVER['PATH_TRANSLATED'])), "</title>"; ?>
-	
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+	<!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="<?= dirname($_SERVER['SCRIPT_NAME']) ?>/markdown.js"></script>
   </head>
   <body>
+  <div class="content gradient">
 <?php
 
 require('markdown.php');
@@ -28,5 +36,6 @@ else {
   echo "<p>Bad filename given</p>";
 }
 ?>
+	</div>
   </body>
 </html>
